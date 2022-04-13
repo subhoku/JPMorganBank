@@ -36,7 +36,7 @@ public class IssueDaoImpl implements IssueDao {
 				while(rs.next()) {
 					issues=new Issues();
 					issues.setId(rs.getInt("id"));
-					issues.setIssuetitle("issuetitle");
+					issues.setIssuetitle(rs.getString("issuetitle"));
 					issues.setOpenedby(rs.getString("openedby"));
 					issues.setDateopened(rs.getString("dateopened"));
 					issues.setDatefixed(rs.getString("datefixed"));
